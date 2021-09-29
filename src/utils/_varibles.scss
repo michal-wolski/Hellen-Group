@@ -1,0 +1,17 @@
+$colors: (
+  'primary': #FF6B09,
+  'secondary': #111518,
+  'neutral': #B9B9B9,
+  'decorative': #3D3D3D,
+  'decorative-secondary': #C4C4C4,
+  'bg-primary': #FFFFFF,
+  'bg-secondary': #000000,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+:root {
+  --main-font: 'Montserrat', sans-serif;
+}
